@@ -136,7 +136,7 @@
       justify-content: space-between;
       width: 200px;
       position: absolute;
-      bottom: -200px;
+      bottom: -100px;
       align-self: center;
     }
     & .fab {
@@ -202,4 +202,9 @@
   .toggle:checked ~ .toggle-label ~ .nav-links {
     display: inherit;
   }
+}
+
+.mynav {
+  z-index: -100;
+  position: absolute;
 }

@@ -9,7 +9,7 @@
     & h1 {
       font-size: 2rem;
       @include breakpoint(medium) {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
     }
     p {
@@ -21,7 +21,7 @@
       margin-bottom: 80px;
       font-size: 1.3rem;
       @include breakpoint(medium) {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
         margin-top: 30px;
       }
@@ -55,7 +55,7 @@
       @include breakpoint(medium) {
         align-self: center;
         justify-self: center;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
         min-width: 300px;
       }
       @media screen and (max-width: 350px) {
@@ -75,7 +75,7 @@
       @include breakpoint(medium) {
         align-self: center;
         justify-self: center;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
         min-width: 300px;
       }
 
@@ -96,7 +96,7 @@
     @include breakpoint(medium) {
       align-self: center;
       justify-self: center;
-      margin-bottom: 80px;
+      margin-bottom: 50px;
       min-width: 300px;
     }
 

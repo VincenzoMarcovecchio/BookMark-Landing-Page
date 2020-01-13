@@ -2,7 +2,9 @@
   text-align: center;
   margin-top: 100px;
   margin-bottom: 20px;
-
+  @include breakpoint(medium) {
+    margin-top: 50px;
+  }
   & .features-titles {
     margin: auto;
     margin-top: 40px;
@@ -14,7 +16,7 @@
     & h2 {
       font-size: 2rem;
       @include breakpoint(medium) {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
       }
     }
@@ -26,7 +28,7 @@
       margin-bottom: 80px;
       font-size: 1.3rem;
       @include breakpoint(medium) {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
         margin-top: 30px;
       }
@@ -41,10 +43,8 @@
 
       @include breakpoint(medium) {
         flex-direction: column;
-        padding-bottom: 30px;
         border-bottom: none;
       }
-
       & li {
         cursor: pointer;
         color: $grayishBlue;
@@ -62,6 +62,10 @@
           margin: auto;
           border-top: 1px solid gray;
           width: 90%;
+
+          &:last-child {
+            border-bottom: 1px solid gray;
+          }
         }
         &:hover {
           border-bottom: 3px solid red;
@@ -138,7 +142,7 @@
       font-weight: 500;
       margin-bottom: 1rem;
       @include breakpoint(medium) {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         text-align: center;
       }
     }
@@ -148,7 +152,7 @@
       font-size: 1.3rem;
       margin-bottom: 20px;
       @include breakpoint(medium) {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
       }
     }
@@ -172,6 +176,6 @@
 }
 
 .tab.active {
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid red !important;
   color: #000 !important;
 }
