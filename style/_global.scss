@@ -61,11 +61,16 @@ $softRed: hsl(0, 94%, 66%);
   text-align: center;
 }
 
-.img-error {
+.image-error {
   width: 25px;
   height: 20px;
   position: absolute;
-  right: 10%;
-  bottom: 20px;
+  right: 42%;
+  bottom: 16px;
   z-index: 2;
+  display: none;
+  @include breakpoint(medium) {
+    bottom: 100px;
+    right: 10%;
+  }
 }

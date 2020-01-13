@@ -49,6 +49,7 @@ myForm.addEventListener("submit", e => {
 function setErrorFor(input) {
   const formControl = document.getElementById("error");
   formControl.style.display = "inherit";
+  document.querySelector(".image-error").style.display = "inherit";
 }
 
 function checkInputs(input) {
