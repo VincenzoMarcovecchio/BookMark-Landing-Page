@@ -2,6 +2,7 @@
   height: 300px;
   width: 100%;
   background-color: $softBlue;
+  z-index: 1;
   @include breakpoint(medium) {
     height: 350px;
   }
@@ -30,13 +31,33 @@
     display: flex;
     justify-content: center;
     position: relative;
+
     @include breakpoint(medium) {
       width: 100%;
       flex-direction: column;
     }
+
+    p {
+      position: absolute;
+      left: 10.7%;
+      bottom: -40px;
+      font-size: 0.9rem;
+      width: 51%;
+      height: 75px;
+      padding: 50px 10px 0 10px;
+      background-color: $softRed;
+      color: #fff;
+      z-index: -1;
+      border-radius: 4px;
+      display: none;
+      @include breakpoint(medium) {
+        top: -3px;
+        width: 91.1%;
+        left: 4.5%;
+      }
+    }
   }
   input {
-    align-self: center;
     margin-right: 30px;
     justify-content: center;
     height: 45px;
@@ -44,8 +65,9 @@
     border: none;
     width: 50%;
     padding-left: 20px;
+
     @include breakpoint(medium) {
-      margin: 0 0 20px 0;
+      margin: 0 auto 20px auto;
       padding-left: 10px;
       width: 90%;
     }

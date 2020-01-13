@@ -35,7 +35,7 @@
     & #Bottone {
       text-align: left;
       width: 100%;
-      background-image: url(./images/icon-arrow.svg);
+      background-image: url(../images/icon-arrow.svg);
       background-repeat: no-repeat;
       background-position: right;
       color: black;
@@ -51,11 +51,11 @@
       }
       &:hover {
         color: red;
-        background-image: url(./images/icon-arrow-copy.svg);
+        background-image: url(../images/icon-arrow-copy.svg);
       }
 
       &:active {
-        background-image: url(./images/icon-arrow-rotated.svg);
+        background-image: url(../images/icon-arrow-rotated.svg);
       }
     }
   }

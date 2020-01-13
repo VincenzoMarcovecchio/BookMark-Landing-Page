@@ -17,18 +17,16 @@
   .nav-logo {
     width: 148px;
     height: 25px;
-    background-image: url(./images/logo-bookmark.svg);
+    background-image: url(../images/logo-bookmark.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 
     @include breakpoint(medium) {
-      background-image: url(/images/logo-bookmark.svg);
+      background-image: url(./images/logo-bookmark.svg);
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
-
-      z-index: 5;
     }
   }
   .nav-links {
@@ -44,7 +42,7 @@
       width: 100%;
       text-align: center;
       position: fixed;
-      top: 150px;
+      top: 105px;
       left: 0;
       display: none;
 
