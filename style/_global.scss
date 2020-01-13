@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: "Rubik", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+$breakpoints: (
+  small: 499px,
+  medium: 750px,
+  large: 999px,
+  xlarge: 1399px
+);
+
+@mixin breakpoint($size) {
+  $breakpoint-value: map-get($breakpoints, $size);
+  @media screen and (max-width: $breakpoint-value) {
+    @content;
+  }
+}
+@mixin breakpoint-up($size) {
+  $breakpoint-value: map-get($breakpoints, $size);
+  @media screen and (min-width: $breakpoint-value) {
+    @content;
+  }
+}
+
+body {
+  font-size: 18px;
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+//Colors
+
+$grayishBlue: hsl(229, 8%, 60%);
+$veryDarkBlue: hsl(229, 31%, 21%);
+$softBlue: hsl(231, 69%, 60%);
+$softRed: hsl(0, 94%, 66%);
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+
+  @include breakpoint(medium) {
+    width: 94%;
+  }
+}

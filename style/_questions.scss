@@ -1,0 +1,89 @@
+.questions {
+  margin-top: 150px;
+
+  .intro-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+    h1 {
+      font-size: 2rem;
+      @include breakpoint(medium) {
+        font-size: 2rem;
+      }
+    }
+    p {
+      color: $grayishBlue;
+      max-width: 700px;
+      margin: 30px auto 0 auto;
+      font-size: 1.3rem;
+      @include breakpoint(medium) {
+        font-size: 1.2rem;
+        margin: 30px auto 0 auto;
+      }
+    }
+  }
+  .card {
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .card-header {
+    background-color: transparent;
+    border-left: 0;
+    align-items: center;
+
+    & #Bottone {
+      text-align: left;
+      width: 100%;
+      background-image: url(/images/icon-arrow.svg);
+      background-repeat: no-repeat;
+      background-position: right;
+      color: black;
+      text-decoration: none;
+      font-family: "Rubik", sans-serif;
+      font-size: 1.3rem;
+      @include breakpoint(medium) {
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: 380px) {
+        font-size: 0.9rem;
+      }
+      &:hover {
+        color: red;
+        background-image: url(/images/icon-arrow-copy.svg);
+      }
+
+      &:active {
+        background-image: url(/images/icon-arrow-rotated.svg);
+      }
+    }
+  }
+}
+.card-body {
+  color: $grayishBlue;
+}
+
+.moreInfo {
+  margin: 80px auto 150px auto;
+  width: 150px;
+  padding: 10px 25px;
+  background-color: $softBlue;
+  color: #fff;
+  font-weight: 500;
+  border: 2px solid $softBlue;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px -2px rgba(173, 171, 173, 0.81);
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #fff;
+    color: $softBlue;
+    box-shadow: none;
+  }
+}
+
+.foo {
+  background-image: url(/images/icon-arrow-rotated.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}

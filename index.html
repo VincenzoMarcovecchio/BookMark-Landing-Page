@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="/style/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/3acb87dbd6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+  </head>
+  <body>
+    <nav class="nav-bar wrapper">
+      <a class="nav-logo" href="#hero">
+       
+      </a>
+      <input type="checkbox" name="toggle" id="toggle" class="toggle" />
+      <label for="toggle" class="toggle-label">
+        <span class="nav-icon"></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Contact</a></li>
+        <button type="submit" class="nav-but">Login</button>
+        <div class="icons">
+          <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="facebook.com"><i class="fab fa-facebook-square"></i></a>
+        </div>
+      </ul>
+    </nav>
+    <main>
+      <section id="hero" class="hero-section wrapper">
+        <div class="text-container">
+          <h2>A Simple Bookmark Manager</h2>
+          <p>
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="btn-container wrapper">
+            <button class="btn-chrome">Get it on Chrome</button>
+            <button class="btn-firefox">Get it on Firefox</button>
+          </div>
+        </div>
+        <div class="svg-container">
+          <img src="/images/illustration-hero.svg" alt="illustration-image" />
+        </div>
+      </section>
+    </main>
+    <section id="features" class="features-section wrapper">
+      <div class="features-titles">
+        <h2 class="feature text">Features</h2>
+        <p>
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+
+        <ul>
+          <li data-tab-target="#SimpleBookmarking" class="tab" id="first">
+            Simple Bookmarking
+          </li>
+          <li data-tab-target="#SpeedySearching" class="tab">
+            Speedy Searching
+          </li>
+          <li data-tab-target="#EasySharing" class="tab">
+            Easy Sharing
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-content">
+        <div
+          id="SimpleBookmarking"
+          class="simpleBookmarking active"
+          data-tab-content
+        >
+          <img src="/images/illustration-features-tab-1.svg" alt="" />
+          <div class="container">
+            <h1>Bookmark in one click</h1>
+            <p>
+              Organize your bookmark however you like. Our simple drag-and-drop
+              interface gives you complete control how you manage your favourite
+              sites
+            </p>
+            <button>More Info</button>
+          </div>
+        </div>
+
+        <div id="SpeedySearching" data-tab-content>
+          <img src="/images/illustration-features-tab-2.svg" alt="" />
+          <div class="container">
+            <h1>Intelligent search</h1>
+            <p>
+              Our powerful dearch feature would help you find saved sites in no
+              time at all. No need to trawl through all of your bookmarks.
+            </p>
+            <button>More Info</button>
+          </div>
+        </div>
+
+        <div id="EasySharing" data-tab-content>
+          <img src="/images/illustration-features-tab-3.svg" alt="" />
+          <div class="container">
+            <h1>Share your bookmarks</h1>
+            <p>
+              Easily share your bookmarks and collections with others. Create a
+              sharable link that you can send at the click of a button.
+            </p>
+
+            <button>More Info</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="download-the-extension wrapper">
+      <div class="intro-section wrapper">
+        <h1>Download the extension</h1>
+        <p>
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+      </div>
+      <div id="Pricing" class="card-container">
+        <div class="card-chrome">
+          <img src="/images/logo-chrome.svg" alt="logo-chrome" />
+          <h4>Add to Chrome</h4>
+          <p>Minimum version 62</p>
+          <img class="dots" src="/images/bg-dots.svg" alt="dots" />
+          <button>Add & Install Extension</button>
+        </div>
+        <div class="card-firefox">
+          <img src="/images/logo-firefox.svg" alt="logo-firefox" />
+          <h4>Add to Firefox</h4>
+          <p>Minimum version 55</p>
+          <img class="dots" src="/images/bg-dots.svg" alt="dots" />
+          <button>Add & Install Extension</button>
+        </div>
+        <div class="card-opera">
+          <img src="/images/logo-opera.svg" alt="logo-opera" />
+          <h4>Add to Opera</h4>
+          <p>Minimum version 46</p>
+          <img class="dots" src="/images/bg-dots.svg" alt="dots" />
+          <button>Add & Install Extension</button>
+        </div>
+      </div>
+    </section>
+    <section class="questions wrapper">
+      <div class="intro-text">
+        <h1>
+          Frequently Asked Questions
+        </h1>
+        <p>
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0"></h2>
+              <button id="Bottone"
+                class="btn btn-link"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                What is Bookmark?
+              </button>
+              
+              <h2 class="mb-0">
+            </h2>
+          </div>
+
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+              on it squid single-origin coffee nulla assumenda shoreditch et.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+              lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them
+              accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button id="Bottone"
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                How can i request a new browser?
+              </button>
+            
+              <h2 class="mb-0">
+            </h2>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+              on it squid single-origin coffee nulla assumenda shoreditch et.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+              lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them
+              accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+         
+              <button id="Bottone"
+                class="btn btn-link collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Is there a mobile app?
+              </button>
+            
+            </h2>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+              cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+              laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+              on it squid single-origin coffee nulla assumenda shoreditch et.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+              nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+              lomo. Leggings occaecat craft beer farm-to-table, raw denim
+              aesthetic synth nesciunt you probably haven't heard of them
+              accusamus labore sustainable VHS.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+           
+                <button id="Bottone"
+                  class="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                 What about other Chromium browser?
+                </button>
+                
+              </h2>
+            </div>
+          <div
+          id="collapseFour"
+          class="collapse"
+          aria-labelledby="headingFour"
+          data-parent="#accordionExample"
+        >
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life
+            accusamus terry richardson ad squid. 3 wolf moon officia aute, non
+            cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+            laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+            on it squid single-origin coffee nulla assumenda shoreditch et.
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+            nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+            lomo. Leggings occaecat craft beer farm-to-table, raw denim
+            aesthetic synth nesciunt you probably haven't heard of them
+            accusamus labore sustainable VHS.
+          </div>
+        </div>
+        </div>
+          
+      </div>
+      
+    </section>
+    <button class="moreInfo">More Info</button>
+<section class="upperFooter wrapper">
+  <h4>35,000+ already joined</h4>
+  <h3>Stay up-to-date with what we're doing</h3>
+  <div class="wrap">
+  <input type="email"placeholder="Enter your email address here"><button>Contact Us</button></div>
+</section>
+<section class="footer">
+  <div class="container">
+<a href="#hero"><img class="svg" src="/images/logo-bookmark-mobile.svg" alt="logo-img"></a>
+<ul>
+  <a href="#features"><li>Features</li></a>
+  <a href="#Pricing"><li>Pricing</li></a>
+  <a href="#Contacts"><li>Contact</li></a>
+</ul>
+</div>
+<div class="icons">
+  <a href="#"><i class="fab fas-lg fa-facebook-square"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+</div>
+
+</section>
+    
+   
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

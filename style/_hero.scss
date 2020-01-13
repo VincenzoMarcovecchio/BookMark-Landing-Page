@@ -1,0 +1,149 @@
+.hero-section {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+  min-width: 700px;
+  z-index: -80;
+  padding-bottom: 20px;
+
+  @include breakpoint(medium) {
+    flex-direction: column-reverse;
+    min-width: 0;
+    align-items: unset;
+    justify-content: unset;
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
+  & .svg-container {
+    width: 55%;
+    position: relative;
+    transform: translateX(60px);
+
+    @include breakpoint(medium) {
+      width: 90%;
+      z-index: -300;
+      transform: translateX(0px);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: -280px;
+      bottom: 0;
+      width: 600px;
+      height: 73%;
+      z-index: -5;
+      background-color: $softBlue;
+      border-bottom-left-radius: 150px;
+
+      @media screen and(min-width:2000px) {
+        width: 900px;
+      }
+      @media screen and(max-width:950px) {
+        width: 500px;
+      }
+      @include breakpoint(medium) {
+        width: 540px;
+      }
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  & .text-container {
+    width: 40%;
+    text-align: left;
+    align-self: center;
+
+    @include breakpoint(medium) {
+      min-width: 0;
+      text-align: center;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    & h2 {
+      line-height: 1.3;
+      font-size: 2.1rem;
+
+      @include breakpoint(medium) {
+        font-size: 2rem;
+        line-height: 1.3;
+      }
+    }
+    & p {
+      color: $grayishBlue;
+      margin: 1.25rem 0 1.5rem 0;
+      font-size: 1.3rem;
+      @include breakpoint(medium) {
+        width: 88%;
+        margin: 1.25rem auto 1.5rem auto;
+        font-size: 1.2rem;
+      }
+    }
+
+    & .btn-chrome {
+      padding: 10px 25px;
+      background-color: $softBlue;
+      color: #fff;
+      font-weight: 500;
+      border: 2px solid $softBlue;
+      border-radius: 4px;
+      box-shadow: 0px 4px 8px -2px rgba(173, 171, 173, 0.81);
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background-color: #fff;
+        color: $softBlue;
+        box-shadow: none;
+      }
+      @include breakpoint(small) {
+        padding: 10px 15px;
+        font-size: 15px;
+      }
+    }
+    & .btn-firefox {
+      padding: 10px 25px;
+      background-color: #f6f6f6;
+      color: rgb(0, 0, 0);
+      font-weight: 400;
+      border: 2px solid #f6f6f6;
+      border-radius: 4px;
+      margin-left: 20px;
+      box-shadow: 0px 4px 8px -2px rgba(173, 171, 173, 0.81);
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        border: 2px solid #000;
+        box-shadow: none;
+      }
+      @include breakpoint(small) {
+        padding: 10px 15px;
+        font-size: 15px;
+      }
+      @media screen and (max-width: 400px) {
+        margin-left: 0px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .btn-container {
+    display: flex;
+    min-width: 380px;
+    margin-top: 50px;
+    margin-left: 0;
+    @include breakpoint(medium) {
+      min-width: 270px;
+      margin: auto;
+      justify-content: center;
+      align-content: center;
+      margin-top: 40px;
+    }
+    @media screen and (max-width: 400px) {
+      flex-direction: column;
+      min-width: 90%;
+    }
+  }
+}
