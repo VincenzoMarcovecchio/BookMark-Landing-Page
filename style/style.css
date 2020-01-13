@@ -70,7 +70,7 @@ main {
 .nav-bar .nav-logo {
   width: 148px;
   height: 25px;
-  background-image: url(/images/logo-bookmark.svg);
+  background-image: url(./images/logo-bookmark.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1033,7 +1033,7 @@ main {
 .questions .card-header #Bottone {
   text-align: left;
   width: 100%;
-  background-image: url(/images/icon-arrow.svg);
+  background-image: url(./images/icon-arrow.svg);
   background-repeat: no-repeat;
   background-position: right;
   color: black;
@@ -1056,11 +1056,11 @@ main {
 
 .questions .card-header #Bottone:hover {
   color: red;
-  background-image: url(/images/icon-arrow-copy.svg);
+  background-image: url(./images/icon-arrow-copy.svg);
 }
 
 .questions .card-header #Bottone:active {
-  background-image: url(/images/icon-arrow-rotated.svg);
+  background-image: url(./images/icon-arrow-rotated.svg);
 }
 
 .card-body {
@@ -1087,12 +1087,6 @@ main {
   color: #5368df;
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-.foo {
-  background-image: url(/images/icon-arrow-rotated.svg);
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 .upperFooter {
