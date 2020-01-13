@@ -6,7 +6,7 @@ $("#toggle").change(function() {
   if (this.checked) {
     $("section").css("zIndex", -3000);
     $(".nav-logo").css({
-      backgroundImage: "url(/images/logo-bookmark-mobile.svg)",
+      backgroundImage: "url(./images/logo-bookmark-mobile.svg)",
       zIndex: "50",
       position: "fixed"
     });
