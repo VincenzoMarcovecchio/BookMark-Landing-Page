@@ -33,7 +33,7 @@ main {
 
 @media screen and (max-width: 750px) {
   .wrapper {
-    width: 94%;
+    width: 90%;
   }
 }
 
@@ -121,6 +121,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   margin-left: auto;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 750px) {
@@ -752,6 +753,7 @@ main {
   text-align: left;
   -ms-flex-item-align: center;
       align-self: center;
+  padding: 0;
 }
 
 @media screen and (max-width: 750px) {
@@ -770,6 +772,7 @@ main {
   .active[data-tab-content] .container h1 {
     font-size: 1.5rem;
     text-align: center;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -831,6 +834,7 @@ main {
 @media screen and (max-width: 750px) {
   .download-the-extension .intro-section h1 {
     font-size: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -863,12 +867,14 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
 }
 
 @media screen and (max-width: 350px) {
   .download-the-extension .card-container {
     padding: 45px 0 30px 0;
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 }
@@ -1024,7 +1030,8 @@ main {
 }
 
 .questions .intro-text {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   text-align: center;
   margin-bottom: 100px;
 }
@@ -1036,6 +1043,7 @@ main {
 @media screen and (max-width: 750px) {
   .questions .intro-text h1 {
     font-size: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -1081,6 +1089,7 @@ main {
 @media screen and (max-width: 750px) {
   .questions .card-header #Bottone {
     font-size: 1rem;
+    padding-left: 0;
   }
 }
 
@@ -1104,7 +1113,7 @@ main {
 }
 
 .moreInfo {
-  margin: 80px auto 150px auto;
+  margin: 80px auto 100px auto;
   width: 150px;
   padding: 10px 25px;
   background-color: #5368df;
