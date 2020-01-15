@@ -99,7 +99,7 @@
     height: 250px;
     max-width: 700px;
     width: 100%;
-    background-color: #6c9acc;
+    background-color: $softBlue;
     border-bottom-right-radius: 25%;
     @include breakpoint(medium) {
       top: 90px;

@@ -82,7 +82,7 @@ function marginButton() {
   const button = document.getElementById("button");
   if (window.innerWidth <= 750) {
     button.style.marginTop = "20px";
-  } else if (window.innerWidth != 750) {
-    button.style.marginTop = 0;
+  } else if (window.innerWidth >= 750) {
+    button.style.marginTop = "0px";
   }
 }

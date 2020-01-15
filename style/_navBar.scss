@@ -21,12 +21,14 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    align-self: center;
 
     @include breakpoint(medium) {
       background-image: url(./images/logo-bookmark.svg);
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
+      align-self: flex-start;
     }
   }
   .nav-links {
@@ -80,7 +82,7 @@
     }
     a {
       text-decoration: none;
-      color: $grayishBlue;
+      color: #000;
       letter-spacing: 1px;
       font-size: 0.9rem;
 
@@ -208,4 +210,8 @@
 .mynav {
   z-index: -100;
   position: absolute;
+  align-self: center;
+  @include breakpoint(medium) {
+    align-self: flex-start;
+  }
 }
