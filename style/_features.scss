@@ -54,6 +54,10 @@
         padding-right: 40px;
         transition: all 0.3s ease-in-out;
 
+        & li:first-child {
+          border-top: none !important;
+        }
+
         @include breakpoint(medium) {
           height: 70px;
           padding: 20px 20px 20px 20px;
@@ -81,7 +85,7 @@
 }
 .active[data-tab-content] {
   display: flex !important;
-  margin: 2rem auto 20px auto;
+  margin: 3rem auto 20px auto;
   width: 100%;
   padding-top: 5px;
   justify-content: space-between;
@@ -91,7 +95,7 @@
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     left: -400px;

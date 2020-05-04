@@ -6,6 +6,9 @@
   font-family: "Rubik", sans-serif;
   transition: all 0.2s ease-in-out;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 $breakpoints: (
   small: 499px,

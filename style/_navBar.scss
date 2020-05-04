@@ -159,6 +159,7 @@
       right: 30px;
       transition: background 0.2s ease-out;
       z-index: 50;
+      cursor: pointer;
 
       &.nav-icon:before {
         background: #000;

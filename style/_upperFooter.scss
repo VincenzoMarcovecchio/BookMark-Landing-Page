@@ -43,10 +43,10 @@
       flex-direction: column;
     }
 
-    p {
+    #error {
       position: absolute;
       left: 10.7%;
-      bottom: -40px;
+      bottom: -43px;
       font-size: 0.9rem;
       width: 51%;
       height: 75px;
@@ -56,10 +56,12 @@
       z-index: -1;
       border-radius: 4px;
       display: none;
+      margin-bottom: 20px;
       @include breakpoint(medium) {
         top: -3px;
         width: 91.3%;
         left: 4.5%;
+        margin-bottom: 20px;
       }
     }
   }
@@ -77,6 +79,10 @@
       margin: 0 auto 20px auto;
       padding-left: 10px;
       width: 90%;
+    }
+
+    &:focus {
+      z-index: 3;
     }
   }
 
